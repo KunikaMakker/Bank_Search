@@ -9,6 +9,7 @@ const SearchBar  = (props) => {
     return(
         <Search 
         loading={isLoading}
+        open={false}
         onSearchChange={handleDebounceOnChange}/>
     );
 }

@@ -46,7 +46,6 @@ class BankInfoWrapperContainer extends React.Component{
                 apiResponse={this.state.apiResponse}
                 selectedCity={this.state.selectedCity}
                 onChangeSelectedCity={this.onChangeSelectedCity}
-
             />
         );
     }

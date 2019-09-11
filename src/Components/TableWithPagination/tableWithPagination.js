@@ -13,7 +13,7 @@ class TableWithPagination extends React.Component {
             startIndex: 0,
             endIndex: 5
         },
-        favBanks:[],
+        favBanks:[]
     }
 
     handlePaginationChange = (e,{activePage}) => {
@@ -33,7 +33,14 @@ class TableWithPagination extends React.Component {
         this.setState(prevState => ({
             favBanks:[...prevState.favBanks,value]
         }),function(){
-            localStorage.setItem('fav',JSON.stringify(this.state.favBanks))}
+            if(localStorage.getItem(value)){
+                localStorage.removeItem(value);
+                
+            }
+            else{
+                localStorage.setItem(value,JSON.stringify(this.state.favBanks))
+            }
+        }
         );
     }
 
