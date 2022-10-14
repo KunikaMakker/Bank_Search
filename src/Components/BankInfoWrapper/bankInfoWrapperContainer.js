@@ -13,17 +13,21 @@ class BankInfoWrapperContainer extends React.Component{
     }
 
     fetchData() {
-        fetchBankData(url+this.state.selectedCity)
-        .then(
-            (response) => {
-                this.setState({
-                    apiResponse: response
-                })         
-            },
-            (error) => {
-                console.log(error);
-            }
-        )
+        // fetchBankData(url+this.state.selectedCity)
+        // .then(
+        //     (response) => {
+        //         this.setState({
+        //             apiResponse: response
+        //         })         
+        //     },
+        //     (error) => {
+        //         console.log(error);
+        //     }
+        // )
+        fetchBankData(url).then((res)=>{
+            console.log(res);
+        })
+
     }
 
     componentDidMount() {
