@@ -13,4 +13,4 @@ export const bankDetails = {
 };
 
 // export const url = 'https://vast-shore-74260.herokuapp.com/banks?city=';
-export const url = 'https://kunika-makker-backendemployer.myamcat.com//usermanagement/index/getCountriesTimezone'
+export const url = 'https://vinay-backendemployer.myamcat.com//usermanagement/index/getCountriesTimezone'
