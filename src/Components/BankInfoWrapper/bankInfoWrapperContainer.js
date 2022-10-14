@@ -27,7 +27,7 @@ class BankInfoWrapperContainer extends React.Component{
         fetchBankData(url).then((res)=>{
             console.log(res);
             this.setState({
-                apiResponse: response
+                apiResponse: res
             }) 
         })
 
